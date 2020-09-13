@@ -10,14 +10,6 @@ class Posts extends Component {
         }
     }
 
-    componentDidMount() {
-        fetch('https://jsonplaceholder.typicode.com/posts')
-            .then(resp => resp.json())
-            .then(posts => this.setState({
-                posts
-            }));
-    }
-
     renderEachPosts = () => {
         const { posts } = this.state;
         if (posts.length > 0) {
@@ -36,7 +28,15 @@ class Posts extends Component {
         else {
             return <p>No data to display </p>
         }
+    }
 
+    getAllPosts = (e) => {
+        e.preventDefault();
+        fetch('https://jsonplaceholder.typicode.com/posts')
+            .then(resp => resp.json())
+            .then(posts => this.setState({
+                posts
+            }));
     }
 
     render() {
@@ -50,10 +50,10 @@ class Posts extends Component {
                     <main>
                         <div className="posts-section">
                             {this.renderEachPosts()}
-\                        </div>
+                        </div>
                     </main>
                     <footer>
-                        <button type="button" >Get all Posts</button>
+                        <button type="button" onClick={this.getAllPosts} >Get all Posts</button>
                     </footer>
                 </div>
 
