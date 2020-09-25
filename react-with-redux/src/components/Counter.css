@@ -1,0 +1,35 @@
+.counter-container {
+    position: relative;
+    left: 30%;
+    margin: 100px;
+    height: 250px;
+    width: 250px;
+    background-color: whitesmoke;
+}
+
+h2 {
+    padding-top: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+.counter-div {
+    border: 1px dashed black;
+    height: calc(100% - 50px);
+    margin: 5px;
+}
+
+.counter-input{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.counter-btn{
+    position: absolute;
+    bottom:5%;
+    left: 25%;
+}
+
+button{
+    margin-right: 5px;
+}

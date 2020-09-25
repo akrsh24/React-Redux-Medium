@@ -1,0 +1,37 @@
+.post-container {
+    position: absolute;
+    left: 25%;
+    border: 2px solid black;
+    width: 500px;
+    height: calc(100vh - 204px);
+    margin: 100px;
+    background-color: #f98167;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin: 0;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.posts-section {
+    border: 1px solid black;
+    margin: 5px;
+    height: calc(100vh - 350px);
+    background-color: #dfe5cc;
+    overflow-y: scroll;
+}
+
+.post-div {
+    border: 1px solid black;
+    margin: 2px;
+    overflow: scroll;
+}
