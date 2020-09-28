@@ -2,4 +2,4 @@
 
 A simple counter react-redux application. 
 
-![counter.gif]
+![./counter.gif]
